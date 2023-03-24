@@ -5,7 +5,7 @@ export const config = {
 };
 
 export function middleware(req: NextRequest, res: NextResponse) {
-  const token = req.cookies.get("token")?.value;
+  const token = req.cookies.get("email")?.value;
 
   if (req.nextUrl.pathname.startsWith("/login")) {
     if (token) {
@@ -20,7 +20,7 @@ export function middleware(req: NextRequest, res: NextResponse) {
     if (!token) {
       req.nextUrl.pathname = "/login";
     } else {
-      req.nextUrl.pathname = "/";
+      return NextResponse.next()
     }
 
     return NextResponse.redirect(req.nextUrl);
