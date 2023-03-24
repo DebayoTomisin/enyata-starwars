@@ -12,9 +12,9 @@ function DashboardLayout({ children }) {
         <Routes />
       </div>
 
-      <div>
+      <div className="body">
         <Header />
-        <div>{children}</div>
+        <div className="children">{children}</div>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ function Routes() {
         >
           <OverviewIcon />
 
-          <h2 className="text-sm text-white font-semibold">OverView</h2>
+          <h2 className="routeText">OverView</h2>
         </div>
       </Link>
 
@@ -30,7 +30,7 @@ function Routes() {
           >
             <StarshipSvg />
 
-            <h2 className="text-sm text-white font-semibold">Starships</h2>
+            <h2 className="routeText">Starships</h2>
           </div>
         </Link>
 
@@ -42,7 +42,7 @@ function Routes() {
           >
             <PeopleSvg />
 
-            <h2 className="text-sm text-white font-semibold">People</h2>
+            <h2 className="routeText">People</h2>
           </div>
         </Link>
         <Link href="/species">
@@ -53,7 +53,7 @@ function Routes() {
           >
             <SpeciesSvg />
 
-            <h2 className="text-sm text-white font-semibold">Species</h2>
+            <h2 className="routeText">Species</h2>
           </div>
         </Link>
       </div>
