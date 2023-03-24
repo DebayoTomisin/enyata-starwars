@@ -145,3 +145,15 @@
 .overview__text {
   @apply text-base leading-6 text-pry-indigo text-pry-grey1 font-medium pb-1;
 }
+
+.page__title {
+  @apply text-base text-pry-grey3 font-normal mb-6;
+}
+
+.table {
+  @apply bg-white w-full rounded-[4px] border-1 border-[#A4A7B7]/40;
+}
+
+.table__headerText {
+  @apply text-base leading-6 font-semibold text-pry-grey3 text-pry-indigo;
+}
