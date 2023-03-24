@@ -12,7 +12,13 @@ function Routes() {
   return (
     <div className="routes">
       <Link href="/">
-        <div className={`${route === "/" ? "active__route" : ""} route mb-16`}>
+        <div
+          className={`${
+            route.includes("overview") || route.startsWith("/")
+              ? "active__route"
+              : ""
+          } route mb-16`}
+        >
           <OverviewIcon />
 
           <h2 className="routeText">Overview</h2>

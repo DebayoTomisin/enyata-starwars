@@ -129,3 +129,19 @@
 .lightyellow__background {
   @apply bg-[#FDFFA9] w-[27px] h-[26px] rounded-[5px];
 }
+
+.overview__info {
+  @apply flex flex-col md:flex-row;
+}
+
+.overview__desc {
+  @apply sm:ml-7 pt-5;
+}
+
+.overview__title {
+  @apply text-[#000000] text-5xl leading-6 pb-7 font-bold;
+}
+
+.overview__text {
+  @apply text-base leading-6 text-pry-indigo text-pry-grey1 font-medium pb-1;
+}
