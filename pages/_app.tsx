@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { AppProvider } from "@/src/context/store";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 function MyApp({ Component, pageProps }) {
   return (

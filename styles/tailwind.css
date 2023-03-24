@@ -53,3 +53,23 @@
 .policy {
   @apply underline text-[#303B54] text-sm font-normal;
 }
+
+.dashboard__layout {
+  @apply flex relative w-full;
+}
+
+.sidebar {
+  @apply w-[272px] min-h-screen bg-default py-8 flex flex-col items-center;
+}
+
+.routes {
+  @apply mt-10;
+}
+
+.route {
+  @apply text-white flex w-[232px]  px-8 space-x-6 py-3 items-center rounded-[4px] cursor-pointer;
+}
+
+.active__route {
+  @apply bg-blue;
+}

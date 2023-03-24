@@ -1,9 +1,21 @@
 import React from "react";
+import Image from "next/image";
+import Header from "./Header";
+import Routes from "./Routes";
 
-function DashboardLayout(children) {
+function DashboardLayout({ children }) {
   return (
-    <div>
-      <div>{children}</div>
+    <div className="dashboard__layout">
+      <div className="sidebar">
+        <Image src="/assets/logo.svg" alt="logo" width={107} height={46} />
+
+        <Routes />
+      </div>
+
+      <div>
+        <Header />
+        <div>{children}</div>
+      </div>
     </div>
   );
 }
