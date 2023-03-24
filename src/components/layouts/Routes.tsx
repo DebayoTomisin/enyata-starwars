@@ -7,17 +7,15 @@ import SpeciesSvg from "../svgs/SpeciesSvg";
 import { useRouter } from "next/router";
 
 function Routes() {
-  const { pathname } = useRouter();
+  const { route } = useRouter();
 
   return (
     <div className="routes">
       <Link href="/">
-        <div
-          className={`${pathname === "/" ? "active__route" : ""} route mb-16`}
-        >
+        <div className={`${route === "/" ? "active__route" : ""} route mb-16`}>
           <OverviewIcon />
 
-          <h2 className="routeText">OverView</h2>
+          <h2 className="routeText">Overview</h2>
         </div>
       </Link>
 
@@ -25,7 +23,7 @@ function Routes() {
         <Link href="/starships">
           <div
             className={`${
-              pathname === "/starships" ? "active__route" : ""
+              route.includes("starships") ? "active__route" : ""
             } route `}
           >
             <StarshipSvg />
@@ -37,7 +35,7 @@ function Routes() {
         <Link href="/people">
           <div
             className={`${
-              pathname === "/people" ? "active__route" : ""
+              route.includes("people") ? "active__route" : ""
             } route `}
           >
             <PeopleSvg />
@@ -48,7 +46,7 @@ function Routes() {
         <Link href="/species">
           <div
             className={`${
-              pathname === "/species" ? "active__route" : ""
+              route.includes("species") ? "active__route" : ""
             } route `}
           >
             <SpeciesSvg />

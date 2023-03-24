@@ -1,9 +1,18 @@
 import React from "react";
+import Head from "next/head";
+import DashboardLayout from "@/src/components/layouts/DashboardLayout";
 
 function Species() {
   return (
     <div>
-      <span>Keep my family strong for me!</span>
+      <Head>
+        <title>Species || Starwars</title>
+        <link rel="icon" href="/assets/logo.svg" />
+      </Head>
+
+      <DashboardLayout>
+        <div>this is type of species</div>
+      </DashboardLayout>
     </div>
   );
 }

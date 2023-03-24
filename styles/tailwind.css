@@ -87,7 +87,11 @@
 }
 
 .content {
-  @apply flex space-x-12 justify-end items-center py-6  pr-10;
+  @apply flex py-6 px-10 items-center;
+}
+
+.right {
+  @apply ml-0 flex w-full justify-end space-x-12 items-center;
 }
 
 .children {
