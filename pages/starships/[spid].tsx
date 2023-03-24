@@ -2,18 +2,18 @@ import React from "react";
 import Head from "next/head";
 import DashboardLayout from "@/src/components/layouts/DashboardLayout";
 
-function Species() {
+function Spaceship() {
   return (
     <div>
       <Head>
-        <title>Species || Starwars</title>
+        <title>StarShips || Starwars</title>
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
       <DashboardLayout>
-        <span>Nothing to see here!</span>
+        <div>This is a single spaceship</div>
       </DashboardLayout>
     </div>
   );
 }
 
-export default Species;
+export default Spaceship;

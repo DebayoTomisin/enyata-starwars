@@ -11,9 +11,11 @@ module.exports = {
         pry: {
           default: "#031434",
           darkblue: "#0B2253",
+          indigo: "#303B54",
           blue: "#0A74DC",
           grey1: "#434854",
           grey2: "#737373",
+          grey3: "#A4A7B7",
         },
       },
       backgroundColor: {
@@ -26,6 +28,9 @@ module.exports = {
       borderColor: {
         grey: "#A4A7B7",
         blue: "#0A74DC",
+      },
+      boxShadow: {
+        custom: "0px 2px 6px rgba(229, 229, 229, 0.3)",
       },
       screens: {
         xs: "200px",
