@@ -3,9 +3,16 @@ import Button from "../reusable/Button";
 import InputField from "../reusable/InputField";
 import { useFormik } from "formik";
 import { loginSchema } from "@/src/schema";
-import { useLogin } from "@/src/hooks/useLogin";
+import { useStore } from "@/src/context/store";
+import Router from "next/router";
+import Cookies from "js-cookie";
 
 function LoginComponent() {
+  function handleLogin(value: string) {
+    Cookies.set("email", value);
+    Router.push("/");
+  }
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -13,7 +20,7 @@ function LoginComponent() {
     },
     validationSchema: loginSchema,
     onSubmit: (values) => {
-      useLogin(values.email);
+      handleLogin(values.email);
     },
   });
 

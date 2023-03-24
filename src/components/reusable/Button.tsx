@@ -10,9 +10,9 @@ type buttonProps = {
   loading?: boolean;
 };
 
-function Button({ value, loading, onClick, className }: buttonProps) {
+function Button({ value, loading, onClick, className, type }: buttonProps) {
   return (
-    <button className={["button", className].join(" ")}>
+    <button type={type} className={["button", className].join(" ")}>
       {!loading ? `${value}` : "Loading..."}
     </button>
   );
