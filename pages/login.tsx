@@ -1,10 +1,11 @@
-import React from "react";
+import LoginComponent from "@/components/auth";
+import AuthLayout from "@/components/layouts/AuthLayout";
 
 function Login() {
   return (
-    <div>
-      <span className="text-red-700 text-3xl">this is the login page</span>
-    </div>
+    <AuthLayout>
+      <LoginComponent />
+    </AuthLayout>
   );
 }
 
