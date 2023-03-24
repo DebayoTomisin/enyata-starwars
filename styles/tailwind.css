@@ -1,0 +1,55 @@
+.auth__layout {
+  @apply min-h-screen flex w-screen;
+}
+
+.auth__layout .left__side {
+  @apply w-4/12 xs:hidden sm:flex items-center justify-center bg-default;
+}
+
+.auth__layout .right__side {
+  @apply xs:w-full sm:w-8/12 flex items-center justify-center;
+}
+
+.login__card {
+  @apply lg:w-[467px] border-1 border-grey/30 rounded-lg xs:px-6 xs:py-8 sm:px-16;
+}
+
+.login__card .login__text h1 {
+  @apply text-2xl font-semibold text-pry-grey1 mb-2;
+}
+
+.login__card .login__text p {
+  @apply text-base text-pry-grey2;
+}
+
+.form {
+  @apply mt-8 grid grid-rows-3 gap-y-8;
+}
+
+.input__field {
+  @apply w-full p-3 text-sm leading-6 font-normal text-pry-darkblue rounded-md border-1 border-grey focus:outline-none focus:border-blue;
+}
+
+.input__field .error {
+  @apply border-1 border-red-600;
+}
+
+.error__message {
+  @apply text-[10px] leading-3 text-red-500 font-semibold;
+}
+
+.button {
+  @apply w-full p-3 text-white text-base rounded-md bg-blue justify-self-center;
+}
+
+.forgot__password {
+  @apply text-center text-pry-blue mt-4;
+}
+
+.privacy__service {
+  @apply text-center mt-14;
+}
+
+.policy {
+  @apply underline text-[#303B54] text-sm font-normal;
+}
