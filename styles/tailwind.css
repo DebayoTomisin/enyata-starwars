@@ -78,6 +78,13 @@
   @apply text-sm text-white font-semibold;
 }
 
+.mobile-sidebar {
+  @apply fixed text-white top-16 h-screen bg-default w-full z-40 duration-500;
+}
+.mobile-sidebar .container {
+  @apply flex w-full h-full align-middle;
+}
+
 .body {
   @apply w-full ml-[272px];
 }

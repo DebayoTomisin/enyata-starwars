@@ -18,8 +18,10 @@
       "@/pages/*": ["pages/*"],
       "@/src/*": ["src/*"],
       "@/components/*": ["src/components/*"],
+      "@/layout/*": ["src/components/layouts/*"],
       "@/svg/*": ["src/components/svgs/*"],
-      "@/api/*": ["src/api/*"]
+      "@/api/*": ["src/api/*"],
+      "@/hooks/*": ["src/hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
