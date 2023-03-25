@@ -1,5 +1,5 @@
 import Head from "next/head";
-import DashboardLayout from "@/src/components/layouts/DashboardLayout";
+import Layout from "@/src/components/layouts";
 import Overview from "@/src/components/overview";
 
 export default function Home() {
@@ -10,9 +10,9 @@ export default function Home() {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
 
-      <DashboardLayout>
+      <Layout>
         <Overview />
-      </DashboardLayout>
+      </Layout>
     </div>
   );
 }

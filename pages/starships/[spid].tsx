@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import DashboardLayout from "@/src/components/layouts/DashboardLayout";
+import Layout from "@/src/components/layouts";
 import StarShip from "@/src/components/starships/starship";
 
 function Spaceship() {
@@ -10,9 +10,9 @@ function Spaceship() {
         <title>StarShips || Starwars</title>
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
-      <DashboardLayout>
+      <Layout>
         <StarShip />
-      </DashboardLayout>
+      </Layout>
     </div>
   );
 }

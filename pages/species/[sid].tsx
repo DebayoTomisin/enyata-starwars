@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import DashboardLayout from "@/src/components/layouts/DashboardLayout";
-import Specie from "@/src/components/species/specie"
+import Layout from "@/src/components/layouts";
+import Specie from "@/src/components/species/specie";
 
 function Species() {
   return (
@@ -11,9 +11,9 @@ function Species() {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
 
-      <DashboardLayout>
+      <Layout>
         <Specie />
-      </DashboardLayout>
+      </Layout>
     </div>
   );
 }

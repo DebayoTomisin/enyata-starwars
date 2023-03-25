@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import DashboardLayout from "@/src/components/layouts/DashboardLayout";
+import Layout from "@/layout/index";
 import Overview from "@/src/components/overview/overview";
 
 function FilmOverview() {
@@ -11,9 +11,9 @@ function FilmOverview() {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
 
-      <DashboardLayout>
+      <Layout>
         <Overview />
-      </DashboardLayout>
+      </Layout>
     </div>
   );
 }
