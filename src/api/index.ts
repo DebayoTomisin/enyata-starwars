@@ -11,8 +11,9 @@ export const getAllFilms = () => {
     }
 }
 
-export const getSingleFilm = (id: string) => {
-    const { data, error, isLoading } = useSWR(`${url}/films/${id}}`)
+export const getSingleFilm = (id: any) => {
+
+    const { data, error, isLoading } = useSWR(`${url}/films/${id}/`, fetcher)
 
     return {
         data, error, isLoading
@@ -27,8 +28,8 @@ export const getAllSpecies = () => {
     }
 }
 
-export const getSpecie = (id: string) => {
-    const { data, error, isLoading } = useSWR(`${url}/specie/${id}`, fetcher)
+export const getSpecie = (id: any) => {
+    const { data, error, isLoading } = useSWR(`${url}/species/${id}`, fetcher)
     return { data, error, isLoading }
 }
 
@@ -40,7 +41,7 @@ export const getAllPersons = () => {
     }
 }
 
-export const getPerson = (id: string) => {
+export const getPerson = (id: number) => {
     const { data, error, isLoading } = useSWR(`${url}/people/${id}`, fetcher)
     return { data, error, isLoading }
 }
@@ -53,7 +54,7 @@ export const getAllStarShips = () => {
     }
 }
 
-export const getStarship = (id: string) => {
+export const getStarship = (id: any) => {
     const { data, error, isLoading } = useSWR(`${url}/starships/${id}`, fetcher)
     return { data, error, isLoading }
 }
