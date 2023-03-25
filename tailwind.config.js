@@ -32,6 +32,7 @@ module.exports = {
       boxShadow: {
         custom: "0px 2px 6px rgba(229, 229, 229, 0.3)",
         deep: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+        table: "0px 0px 30px rgba(13, 47, 161, 0.07)",
       },
       screens: {
         xs: "200px",

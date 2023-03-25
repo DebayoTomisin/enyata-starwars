@@ -151,9 +151,21 @@
 }
 
 .table {
-  @apply bg-white w-full rounded-[4px] border-1 border-[#A4A7B7]/40;
+  @apply bg-white mb-3 w-full rounded-[6px] border-1 border-[#A4A7B7]/40;
+}
+
+.table__header__row {
+  @apply first:text-start;
 }
 
 .table__headerText {
-  @apply text-base leading-6 font-semibold text-pry-grey3 text-pry-indigo;
+  @apply py-5 px-4 whitespace-nowrap text-sm leading-6 font-medium text-pry-grey3 text-start;
+}
+
+.table__body {
+  @apply text-base leading-6 font-medium text-pry-grey3 text-pry-indigo text-center capitalize;
+}
+
+.table__body__row {
+  @apply text-sm border-b-1 border-[#E5E5E5] first:shadow-table first:border-0;
 }
