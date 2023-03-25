@@ -3,7 +3,7 @@ import BellIcon from "../svgs/BellSvg";
 import AccountSvg from "../svgs/AccountSvg";
 import ThreeDots from "../svgs/ThreeDotSvg";
 import ArrowRightSvg from "../svgs/ArrowRight";
-import Cookies from "js-cookie";
+import { useStore } from "@/src/context/store";
 import { useRouter } from "next/router";
 
 function Header() {
@@ -13,6 +13,7 @@ function Header() {
     router.back();
   }
 
+  const {email} = useStore()
   return (
     <div className="header">
       <div className="content">
@@ -25,7 +26,6 @@ function Header() {
             <span className="text-base">Back</span>
           </div>
         )}
-
         <div className="right">
           <div className="pr-6 border-r-1 border-[#E5E5E5]">
             <BellIcon />
@@ -34,7 +34,7 @@ function Header() {
           <div className="flex space-x-4 items-center">
             <AccountSvg />
             <span className="text-pry-indigo text-[15px] leading-[18px] font-normal">
-              Judah
+             {email}
             </span>
           </div>
           <ThreeDots />
