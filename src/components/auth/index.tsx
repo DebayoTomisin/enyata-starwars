@@ -13,7 +13,7 @@ function LoginComponent() {
 
   function handleLogin(value: string) {
     Cookies.set("email", value);
-    storage.value.updateEmail(value);
+    storage.updateEmail(value);
     Router.push('/')
   }
 

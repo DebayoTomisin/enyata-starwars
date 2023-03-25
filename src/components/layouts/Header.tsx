@@ -14,7 +14,7 @@ function Header() {
   }
 
   const store = useStore();
-  
+
   return (
     <div className="header">
       <div className="content">
@@ -35,7 +35,7 @@ function Header() {
           <div className="flex space-x-4 items-center">
             <AccountSvg />
             <span className="text-pry-indigo text-[15px] leading-[18px] font-normal">
-              {store.value.email}
+              {store.email}
             </span>
           </div>
           <ThreeDots />

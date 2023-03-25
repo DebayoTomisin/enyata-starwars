@@ -12,6 +12,6 @@ export function AppProvider({ children }: any) {
   };
 
   return (
-    <UserContext.Provider value={{ value }}>{children}</UserContext.Provider>
+    <UserContext.Provider value={value}>{children}</UserContext.Provider>
   );
 }
