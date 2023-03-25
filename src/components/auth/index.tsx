@@ -10,10 +10,11 @@ import Cookies from "js-cookie";
 function LoginComponent() {
   const storage = useStore();
 
+
   function handleLogin(value: string) {
     Cookies.set("email", value);
-    storage.setEmail(value);
-    Router.push("/");
+    storage.value.updateEmail(value);
+    Router.push('/')
   }
 
   const formik = useFormik({

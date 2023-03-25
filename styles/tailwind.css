@@ -55,11 +55,11 @@
 }
 
 .dashboard__layout {
-  @apply flex h-screen;
+  @apply flex;
 }
 
 .sidebar {
-  @apply min-w-[272px] h-screen fixed left-0 top-0  bg-default py-8 flex flex-col items-center;
+  @apply min-w-[272px] h-screen fixed left-0 top-0 bg-default py-8 flex flex-col items-center;
 }
 
 .routes {

@@ -13,7 +13,8 @@ function Header() {
     router.back();
   }
 
-  const {email} = useStore()
+  const store = useStore();
+  
   return (
     <div className="header">
       <div className="content">
@@ -34,7 +35,7 @@ function Header() {
           <div className="flex space-x-4 items-center">
             <AccountSvg />
             <span className="text-pry-indigo text-[15px] leading-[18px] font-normal">
-             {email}
+              {store.value.email}
             </span>
           </div>
           <ThreeDots />
