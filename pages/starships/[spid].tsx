@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import DashboardLayout from "@/src/components/layouts/DashboardLayout";
+import StarShip from "@/src/components/starships/starship";
 
 function Spaceship() {
   return (
@@ -10,7 +11,7 @@ function Spaceship() {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
       <DashboardLayout>
-        <div>This is a single spaceship</div>
+        <StarShip />
       </DashboardLayout>
     </div>
   );

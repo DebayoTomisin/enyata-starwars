@@ -57,7 +57,10 @@ function Table({ columns, data }) {
       <table {...getTableProps()} className="table">
         <thead>
           {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
+            <tr
+              className="table__header__row"
+              {...headerGroup.getHeaderGroupProps()}
+            >
               {headerGroup.headers.map((column) => (
                 <th className="table__headerText" {...column.getHeaderProps()}>
                   {column.render("Header")}
@@ -67,14 +70,19 @@ function Table({ columns, data }) {
           ))}
         </thead>
 
-        <tbody {...getTableBodyProps()}>
+        <tbody {...getTableBodyProps()} className="table__body">
           {rows.slice(0, 10).map((row, i) => {
             prepareRow(row);
             return (
-              <tr {...row.getRowProps()}>
+              <tr className="table__body__row" {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                    <td
+                      className="py-6 px-4 text-start"
+                      {...cell.getCellProps()}
+                    >
+                      {cell.render("Cell")}
+                    </td>
                   );
                 })}
               </tr>
