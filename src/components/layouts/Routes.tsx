@@ -14,9 +14,7 @@ function Routes() {
       <Link href="/">
         <div
           className={`${
-            route.includes("overview") || route.startsWith("/")
-              ? "active__route"
-              : ""
+            route.includes("overview") || route === "/" ? "active__route" : ""
           } route mb-16`}
         >
           <OverviewIcon />
