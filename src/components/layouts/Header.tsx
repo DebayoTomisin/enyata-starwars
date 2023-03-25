@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 
 function Header() {
   const router = useRouter();
-  const email = Cookies.get("email");
 
   function goBack() {
     router.back();
@@ -20,10 +19,10 @@ function Header() {
         {Object.keys(router.query).length !== 0 && (
           <div
             onClick={() => goBack()}
-            className="flex cursor-pointer items-center text-pry-grey3 space-x-3"
+            className="flex cursor-pointer items-center text-pry-grey3 space-x-2"
           >
             <ArrowRightSvg />
-            <span>Back</span>
+            <span className="text-base">Back</span>
           </div>
         )}
 

@@ -14,6 +14,11 @@ export function middleware(req: NextRequest, res: NextResponse) {
     }
   }
 
+  if (req.nextUrl.pathname === "/overview") {
+    req.nextUrl.pathname = "/";
+    return NextResponse.redirect(req.nextUrl);
+  }
+
   if (
     !req.nextUrl.pathname.startsWith("/login")
   ) {

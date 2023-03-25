@@ -1,20 +1,21 @@
 import React from "react";
 import Head from "next/head";
 import DashboardLayout from "@/src/components/layouts/DashboardLayout";
-import StarShip from "@/src/components/starships/starship";
+import Overview from "@/src/components/overview/overview";
 
-function Spaceship() {
+function FilmOverview() {
   return (
     <div>
       <Head>
-        <title>StarShips || Starwars</title>
+        <title>Film || Starwars</title>
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
+
       <DashboardLayout>
-        <StarShip />
+        <Overview />
       </DashboardLayout>
     </div>
   );
 }
 
-export default Spaceship;
+export default FilmOverview;

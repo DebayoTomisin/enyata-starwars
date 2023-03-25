@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import DashboardLayout from "@/src/components/layouts/DashboardLayout";
+import Specie from "@/src/components/species/specie"
 
 function Species() {
   return (
@@ -11,7 +12,7 @@ function Species() {
       </Head>
 
       <DashboardLayout>
-        <div>this is type of species</div>
+        <Specie />
       </DashboardLayout>
     </div>
   );

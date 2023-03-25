@@ -1,5 +1,6 @@
 import Head from "next/head";
 import DashboardLayout from "@/src/components/layouts/DashboardLayout";
+import Overview from "@/src/components/overview";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       </Head>
 
       <DashboardLayout>
-        <div>Omo Rapala!</div>
+        <Overview />
       </DashboardLayout>
     </div>
   );

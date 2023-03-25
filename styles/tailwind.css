@@ -97,3 +97,75 @@
 .children {
   @apply mt-16 px-10;
 }
+
+.card__box {
+  @apply bg-white max-w-[208px] rounded-[10px] shadow-deep py-6 px-[18px];
+}
+
+.card__header {
+  @apply flex w-full mb-5 justify-between;
+}
+
+.card__text {
+  @apply text-base font-bold text-pry-indigo;
+}
+
+.card__footer {
+  @apply text-[9px] leading-6 text-[#00992B];
+}
+
+.lightgreen__background {
+  @apply bg-[#A9FFE0] w-[27px] h-[26px] rounded-[5px];
+}
+
+.lightblue__background {
+  @apply bg-[#A9C1FF] w-[27px] h-[26px] rounded-[5px];
+}
+
+.lightpink__background {
+  @apply bg-[#FFA9EC] w-[27px] h-[26px] rounded-[5px];
+}
+
+.lightyellow__background {
+  @apply bg-[#FDFFA9] w-[27px] h-[26px] rounded-[5px];
+}
+
+.overview__info {
+  @apply flex flex-col md:flex-row;
+}
+
+.overview__desc {
+  @apply sm:ml-7 pt-5;
+}
+
+.overview__title {
+  @apply text-[#000000] text-5xl leading-6 pb-7 font-bold;
+}
+
+.overview__text {
+  @apply text-base leading-6 text-pry-indigo text-pry-grey1 font-medium pb-1;
+}
+
+.page__title {
+  @apply text-base text-pry-grey3 font-normal mb-6;
+}
+
+.table {
+  @apply bg-white mb-3 w-full rounded-[6px] border-1 border-[#A4A7B7]/40;
+}
+
+.table__header__row {
+  @apply first:text-start;
+}
+
+.table__headerText {
+  @apply py-5 px-4 whitespace-nowrap text-sm leading-6 font-medium text-pry-grey3 text-start;
+}
+
+.table__body {
+  @apply text-base leading-6 font-medium text-pry-grey3 text-pry-indigo text-center capitalize;
+}
+
+.table__body__row {
+  @apply text-sm border-b-1 border-[#E5E5E5] first:shadow-table first:border-0;
+}
